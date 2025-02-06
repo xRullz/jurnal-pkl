@@ -1,60 +1,60 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+## Aplikasi Pencatatan Kegiatan PKL 
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Aplikasi Pencatatan Kegiatan PKL adalah sebuah aplikasi berbasis
+web yang dibangun menggunakan Yii2 Framework. Aplikasi ini dirancang untuk membantu siswa dan
+pembimbing dalam mencatat dan mengelola kegiatan selama Praktik Kerja Lapangan (PKL).
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+## Fitur
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+- *Autentikasi Pengguna*: Pengguna dapat mendaftar dan masuk ke dalam aplikasi.
+- *Manajemen Pengguna*: Admin dapat menambah, mengedit, dan menghapus pengguna (siswa dan pembimbing).
+- *Pencatatan Kegiatan*: Siswa dapat mencatat kegiatan harian selama PKL.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+## Teknologi yang Digunakan
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+- *PHP*: Bahasa pemrograman yang digunakan untuk membangun aplikasi.
+- *Yii2 Framework*: Framework PHP yang digunakan untuk pengembangan aplikasi web.
+- *MySQL*: Database yang digunakan untuk menyimpan data pengguna dan kegiatan.
+- *Bootstrap*: Framework CSS untuk membuat antarmuka pengguna yang responsif dan menarik.
 
-DIRECTORY STRUCTURE
--------------------
+## Prerequisites
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+Sebelum memulai, pastikan Anda memiliki:
+
+- PHP 7.4 atau lebih tinggi
+- Composer
+- MySQL
+- Web Server (Apache/Nginx)
+
+## Instalasi
+
+1. *Clone Repository*:
+   ```bash
+   git clone https://github.com/xRullz/jurnal-pkl.git
+   cd jurnal-pkl
+   
+2. *Install Dependencies*:
+   ```bash
+   composer install
+   
+3. *Inialisasi Aplikasi*
+    - Jalankan perintah berikut untuk menginisialisasi aplikasi:
+     ```bash
+     php init
+    ``` 
+    - Pilih opsi Production saat diminta.
+
+4. *Konfigurasi Database*:
+   - Ubah file konfigurasi sesuai kebutuhan.
+   - Sesuaikan pengaturan database di `common/config/main-local.php`.
+
+5. *Migrasi Database*:
+   ```bash
+   php yii migrate
+   
+6. *Akses Aplikasi*:
+   - Buka browser dan akses `http://localhost/jurnal-pkl` untuk melihat aplikasi.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan buat fork repository ini dan buat pull request untuk fitur atau perbaikan yang Anda usulkan.
